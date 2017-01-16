@@ -354,6 +354,7 @@ extension SessionDelegate: URLSessionTaskDelegate {
             completionHandler(result.0, result.1)
         } else if let delegate = self[task]?.delegate {
             delegate.urlSession(
+                
                 session,
                 task: task,
                 didReceive: challenge,
